@@ -1,10 +1,10 @@
 export interface Order {
-  id: number;
+  id: string;
   from: string;
   to: string;
   type: string;
-  forename: string;
-  name: string;
+  firstname: string;
+  lastname: string;
   dob: string;
   date: string;
   delayed?: boolean;
