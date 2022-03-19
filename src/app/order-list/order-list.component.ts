@@ -8,8 +8,8 @@ import { Order } from '../order';
   styleUrls: ['./order-list.component.css'],
 })
 export class OrderListComponent implements OnInit {
-  from = 1;
-  to = 2;
+  from = 'Ward 10';
+  to = 'ICU';
   orders: Array<Order> = [];
   selectedOrder: Order | null = null;
 
@@ -18,7 +18,7 @@ export class OrderListComponent implements OnInit {
   ngOnInit(): void {}
 
   search(): void {
-    const url = 'http://virtserver.swaggerhub.com/legraml/oloso/1.0.0/order';
+    const url = 'https://app.swaggerhub.com/apis/legraml/oloso/1.0.0/order';
 
     const headers = new HttpHeaders().set('Accept', 'application/json');
 
